@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">健康小助手</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bpmanager">健康小助手</string>
+    <string name="task_title">Text Title</string>
+    <string name="task_tip">tipstipstipstipstipstips</string>
+    <string name="title_activity_todo_list">TodoListActivity</string>
+    <string name="setting_reminder">设置提醒</string>
+    <string name="scanning_history">回顾历史</string>
+    <string name="reading_guidelines">查看指导</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="todolist_num">1</string>
+    <string name="todolist_title">早起测量一次血压</string>
+    <string name="add_new_record">添加一次记录</string>
+    <string name="title_activity_compiance">CompianceActivity</string>
+    <string name="continue_record">继续记录</string>
+    <string name="title_activity_personal">PersonalActivity</string>
+    <string name="my">我的</string>
+
+</resources>

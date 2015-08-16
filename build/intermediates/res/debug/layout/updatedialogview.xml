@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<EditText
+		android:id="@+id/ed1"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:numeric="integer"
+		android:hint="高压 "/>
+    <EditText
+		android:id="@+id/ed2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:numeric="integer"
+		android:hint="低压 "/>
+	<EditText
+		android:id="@+id/ed3"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:numeric="integer"
+		android:hint="心率 "/>
+</LinearLayout><!-- From: file:/E:/Android%20Practise/健康小助手完整代码%20-%20练习1/app/src/main/res/layout/updatedialogview.xml -->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="小飞虫钻进耳道" 
+        android:textSize="20sp"
+        android:textColor="#ee2222"/>
+    <TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+    <View 
+		android:layout_width="fill_parent"
+		android:layout_height="0.1dp"
+		android:background="#88000000"/>
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="        小飞虫突然钻进耳道后，千万不要用手指或其他东西去掏它，以免小飞虫越钻越深，万一钻破鼓膜，可能会导致听力下降。正确的做法是到黑暗的地方，用手电光照着耳道，利用昆虫的趋光性，用光引出飞虫。也可以向耳道内部滴几滴烹调油，使飞虫的翅膀浸湿而无法张开，再用耳勺将虫掏出耳道。如果上述方法不奏效，应立即去医院就诊。"/>
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+
+	<ImageView
+	    android:adjustViewBounds="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:src="@drawable/badahu" />
+	
+</LinearLayout>

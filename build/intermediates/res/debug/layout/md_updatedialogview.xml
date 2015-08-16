@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<EditText
+		android:id="@+id/ed1m"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:hint="药物名称"/>
+	<EditText
+		android:id="@+id/ed2m"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:hint="服用剂量 /片"/>
+</LinearLayout>
+
+<!-- From: file:/E:/Android%20Practise/健康小助手完整代码%20-%20练习1/app/src/main/res/layout/md_updatedialogview.xml -->

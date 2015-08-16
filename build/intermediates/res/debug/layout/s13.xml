@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="骨折" 
+        android:textSize="20sp"
+        android:textColor="#ee2222"/>
+    <TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+    <View 
+		android:layout_width="fill_parent"
+		android:layout_height="0.1dp"
+		android:background="#88000000"/>
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="        确定有骨折后，一定要对伤肢（指）作固定再送医院，否则骨折断端异常活动，会加重损伤。可因地制宜用木板、木棍、树枝、竹竿、杂志等作为固定用的临时夹板。若无上述材料，可将上肢固定在躯干上，下肢固定在对侧的健肢上。"/>
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+
+	<ImageView
+	    android:adjustViewBounds="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:src="@drawable/guzhe" />
+	
+</LinearLayout>
+<!-- From: file:/E:/Android%20Practise/健康小助手完整代码%20-%20练习1/app/src/main/res/layout/s13.xml -->

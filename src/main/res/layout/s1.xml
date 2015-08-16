@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="眼睛里进沙子" 
+        android:textSize="20sp"
+        android:textColor="#ee2222"/>
+    <TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+    <View 
+		android:layout_width="fill_parent"
+		android:layout_height="0.1dp"
+		android:background="#88000000"/>
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="        异物入眼时，最忌讳使劲揉眼睛，或用干的纸巾或毛巾擦拭眼睛。正确的做法是睁开眼睛，让同伴帮忙翻开眼皮，仔细检查眼白（球结膜）、下眼睑和角膜。如异物在眼皮或眼白部位，可用纸巾蘸少许纯水轻轻擦去异物（在家时，最好用棉签沾少许抗生素类眼药水擦去异物）；如异物在上眼睑内、角膜处，或嵌入较深，则必须及时到医院处理。"/>
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+
+	<ImageView
+	    android:adjustViewBounds="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:src="@drawable/shazi" />
+	
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="踝扭伤" 
+        android:textSize="20sp"
+        android:textColor="#ee2222"/>
+    <TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+    <View 
+		android:layout_width="fill_parent"
+		android:layout_height="0.1dp"
+		android:background="#88000000"/>
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="        踝关节扭伤后，不要继续行走，也不要揉搓、转动受伤关节，以免进一步加重损伤。应立即用冷毛巾或冰块敷患处，有利消肿、止痛、缓解肌肉痉挛。24小时后方可改为热敷。如果怀疑有内出血，最好用弹性绷带加压包扎，但不要过紧，以免妨碍包扎部位以下的血液循环。如果怀疑有骨折，最好用夹板或就近找木棍固定受伤的踝关节，并尽快去医院就诊。"/>
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+
+	<ImageView
+	    android:adjustViewBounds="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:src="@drawable/huai" />
+	
+</LinearLayout>
+<!-- From: file:/E:/Android%20Practise/健康小助手完整代码%20-%20练习1/app/src/main/res/layout/s15.xml -->

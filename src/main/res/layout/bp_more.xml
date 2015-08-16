@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+   	<LinearLayout 
+       	android:orientation="vertical"
+       	android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="疾病治疗" 
+        android:textSize="20sp"
+        android:textColor="#fe5864"/>
+    <TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+    <View 
+		android:layout_width="fill_parent"
+		android:layout_height="0.1dp"
+		android:background="#88000000"/>
+    <TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#fe5864"
+        android:text="1. 保持心态平衡"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="      情绪激动是心脑血管病的大忌，冠心病和高血脂患者尤其要放宽胸怀，不要让情绪起伏太大。"/>
+    <ImageView 
+        android:adjustViewBounds="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/good_mood" />
+    <TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+	<TextView    
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#fe5864"
+        android:text="2. 适当运动"/>
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="      心脑血管患者不是不能运动，而是要适当运动，运动量减少也会造成血流缓慢，血脂升高。要合理安排运动时间和控制好运动量。冬季要等太阳升起来之后再去锻炼，此时，温度回升，可避免机体突然受到寒冷刺激而发病。"/>
+	<ImageView 
+	    android:adjustViewBounds="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exercisefreq" />
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+	<TextView    
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textColor="#fe5864"
+        android:text="3. 空气负离子治疗"/>
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="      负离子能有效修复老化的细胞膜电位，促使其变成正常带负电的细胞，负负相斥从而有效降低血液黏稠度，使血沉减慢。同时负离子能加强血液中胶体质点本身负极性趋势，使血浆蛋白的胶体稳定性增加，保持血液的正常健康状态。"/>
+	<ImageView 
+	    android:adjustViewBounds="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fu_li_zi" />
+	</LinearLayout>
+	
+</ScrollView>
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zju.bme.bp"
+    android:versionCode="1"
+    android:versionName="1.40" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="zju.bme.bp.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="zju.bme.bp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="zju.bme.bp.add" />
+        <activity android:name="zju.bme.bp.stats" />
+        <activity android:name="zju.bme.bp.add_bp" />
+        <activity android:name="zju.bme.bp.add_weight" />
+        <activity android:name="zju.bme.bp.ecg" />
+        <activity android:name="zju.bme.bp.cal_linechart" />
+        <activity android:name="zju.bme.bp.bmi" />
+        <activity android:name="zju.bme.bp.report" />
+        <activity android:name="zju.bme.bp.bp_report" />
+        <activity android:name="zju.bme.bp.weight_report" />
+        <activity android:name="come.android.game2048.main_game" />
+        <activity android:name="zju.bme.bp.add_exercise" />
+        <activity android:name="zju.bme.bp.pie_chart" />
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity android:name="zju.bme.bp.ex_report" />
+        <activity android:name="zju.bme.bp.bp_linechart" />
+        <activity android:name="zju.bme.bp.weight_linechart" />
+        <activity android:name="zju.bme.bp.weight_more2" />
+        <activity android:name="zju.bme.bp.weight_more1" />
+        <activity android:name="zju.bme.bp.key_stats" />
+        <activity android:name="com.test.btclient.BTClient" />
+        <activity android:name="com.test.btclient.readdata" />
+        <activity
+            android:name="com.test.btclient.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="连接设备"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.test.btclient.DataDisplay"
+            android:label="显示数据" />
+        <activity
+            android:name="com.test.btclient.SearchActivity"
+            android:label="绘图" />
+        <activity android:name="zju.bme.bp.health_information" />
+        <activity android:name="zju.bme.bp.bp_info" />
+        <activity android:name="zju.bme.bp.weight_info" />
+        <activity android:name="zju.bme.bp.bp_treat_more" />
+        <activity android:name="zju.bme.bp.add_medicine" />
+        <activity android:name="zju.bme.bp.md_report" />
+        <activity android:name="zju.bme.bp.bp_prevent_more" />
+        <activity android:name="zju.bme.bp.exercise_info" />
+        <activity android:name="zju.bme.bp.save" />
+        <activity android:name="zju.bme.bp.q1" />
+        <activity android:name="zju.bme.bp.q2" />
+        <activity android:name="zju.bme.bp.q3" />
+        <activity android:name="zju.bme.bp.q4" />
+        <activity android:name="zju.bme.bp.q5" />
+        <activity android:name="zju.bme.bp.q6" />
+        <activity android:name="zju.bme.bp.q7" />
+        <activity android:name="zju.bme.bp.q8" />
+        <activity android:name="zju.bme.bp.q9" />
+        <activity android:name="zju.bme.bp.s1" />
+        <activity android:name="zju.bme.bp.s2" />
+        <activity android:name="zju.bme.bp.s3" />
+        <activity android:name="zju.bme.bp.s4" />
+        <activity android:name="zju.bme.bp.s5" />
+        <activity android:name="zju.bme.bp.s6" />
+        <activity android:name="zju.bme.bp.s7" />
+        <activity android:name="zju.bme.bp.s8" />
+        <activity android:name="zju.bme.bp.s9" />
+        <activity android:name="zju.bme.bp.s10" />
+        <activity android:name="zju.bme.bp.s11" />
+        <activity android:name="zju.bme.bp.s12" />
+        <activity android:name="zju.bme.bp.s13" />
+        <activity android:name="zju.bme.bp.s14" />
+        <activity android:name="zju.bme.bp.s15" />
+        <activity android:name="zju.bme.bp.s16" />
+        <activity android:name="zju.bme.bp.s17" />
+        <activity android:name="zju.bme.bp.s18" />
+        <activity android:name="zju.bme.bp.s19" />
+        <activity android:name="zju.bme.bp.s20" />
+        <activity android:name="zju.bme.bp.s21" />
+    </application>
+
+</manifest>

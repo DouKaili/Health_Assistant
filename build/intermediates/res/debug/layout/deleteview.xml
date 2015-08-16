@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<TextView 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="确定要删除这条记录吗？"
+		android:textSize="20sp" 
+		android:textColor="#e15858" 
+		android:layout_centerInParent="true"
+		android:gravity="center"/>
+</RelativeLayout>
+<!-- From: file:/E:/Android%20Practise/健康小助手完整代码%20-%20练习1/app/src/main/res/layout/deleteview.xml -->

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:text="数据与图表"
+			android:textColor="#ffffff"
+			android:background="#3CB1D8"
+			android:gravity="center"
+			android:textSize="23sp"/>
+	<LinearLayout
+		android:clickable="true"
+		android:background="@drawable/re2_selector"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" 
+		android:id="@+id/rltlayout_keystats">
+		
+		<View 
+			android:layout_width="fill_parent"
+			android:layout_height="8dp" 
+			android:background="@android:color/transparent"/>   
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/re2_selector">
+			<ImageView	
+				android:id="@+id/imageView1s"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="10dp"
+				android:src="@drawable/stats_light" 
+				android:contentDescription="key statics"/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignTop="@id/imageView1s"
+				android:layout_toRightOf="@id/imageView1s"
+				android:layout_marginLeft="10dp"
+				android:text="均值统计"
+				android:textSize="20sp"/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@id/imageView1s"
+				android:layout_toRightOf="@id/imageView1s"
+				android:layout_marginLeft="10dp"
+				android:text="统计您的血压与体重均值"
+				android:textColor="#66000000"
+				android:textSize="15sp"/>
+		</RelativeLayout>
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="4dp" 
+			android:background="@android:color/transparent"/>
+	</LinearLayout>
+	<View 
+		android:layout_width="fill_parent"
+		android:layout_height="0.1dp"
+		android:background="#88000000"/>
+	<LinearLayout
+		android:clickable="true"
+		android:background="@drawable/re2_selector"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" 
+		android:id="@+id/rltlayout_bplinechart">
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="4dp" 
+			android:background="@android:color/transparent"/>    
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:id="@+id/imageView2s"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="10dp"
+				android:src="@drawable/heart_light" 
+				android:contentDescription="bp linechart"/>
+		   <TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignTop="@id/imageView2s"
+				android:layout_toRightOf="@id/imageView2s"
+				android:layout_marginLeft="10dp"
+				android:text="血压记录"
+				android:textSize="20sp"/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@id/imageView2s"
+				android:layout_toRightOf="@id/imageView2s"
+				android:layout_marginLeft="10dp"
+				android:text="以折线图形式显示血压变化"
+				android:textColor="#66000000"
+				android:textSize="15sp"/>
+		</RelativeLayout>
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="4dp" 
+			android:background="@android:color/transparent"/>
+	</LinearLayout>
+<!-- 	<View  -->
+<!-- 		android:layout_width="fill_parent" -->
+<!-- 		android:layout_height="0.1dp" -->
+<!-- 		android:background="#88000000"/> -->
+<!-- 	<LinearLayout -->
+<!-- 		android:id="@+id/re_stat3" -->
+<!-- 		android:clickable="true" -->
+<!-- 		android:background="@drawable/re2_selector" -->
+<!-- 		android:layout_width="match_parent" -->
+<!-- 		android:layout_height="wrap_content" -->
+<!-- 		android:orientation="vertical" > -->
+<!-- 		<TextView  -->
+<!-- 			android:layout_width="fill_parent" -->
+<!-- 			android:layout_height="4dp"  -->
+<!-- 			android:background="@android:color/transparent"/>     -->
+<!-- 		<RelativeLayout -->
+<!-- 			android:layout_width="fill_parent" -->
+<!-- 			android:layout_height="wrap_content"> -->
+<!-- 			<ImageView -->
+<!-- 				android:id="@+id/imageView3s" -->
+<!-- 				android:layout_width="50dp" -->
+<!-- 				android:layout_height="50dp" -->
+<!-- 				android:layout_marginLeft="10dp" -->
+<!-- 				android:src="@drawable/pie_heart_light"  -->
+<!-- 				android:contentDescription="bp piechart"/> -->
+<!-- 			<TextView  -->
+<!-- 				android:layout_width="wrap_content" -->
+<!-- 				android:layout_height="wrap_content" -->
+<!-- 				android:layout_alignTop="@id/imageView3s" -->
+<!-- 				android:layout_toRightOf="@id/imageView3s" -->
+<!-- 				android:layout_marginLeft="10dp" -->
+<!-- 				android:text="血压饼状图" -->
+<!-- 				android:textSize="20sp"/> -->
+<!-- 			<TextView  -->
+<!-- 				android:layout_width="wrap_content" -->
+<!-- 				android:layout_height="wrap_content" -->
+<!-- 				android:layout_alignBottom="@id/imageView3s" -->
+<!-- 				android:layout_toRightOf="@id/imageView3s" -->
+<!-- 				android:layout_marginLeft="10dp" -->
+<!-- 				android:text="以饼状图形式显示血压正常情况" -->
+<!-- 				android:textColor="#66000000" -->
+<!-- 				android:textSize="15sp"/> -->
+<!-- 		</RelativeLayout> -->
+<!-- 		<TextView  -->
+<!-- 			android:layout_width="fill_parent" -->
+<!-- 			android:layout_height="4dp"  -->
+<!-- 			android:background="@android:color/transparent"/>   -->
+<!-- 	</LinearLayout>   -->
+	<View 
+		android:layout_width="fill_parent"
+		android:layout_height="0.1dp"
+		android:background="#88000000"/>
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:id="@+id/rltlayout_weightlinechart"
+		android:background="@drawable/re2_selector"> 
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="4dp" 
+			android:background="@android:color/transparent"/>    
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<ImageView
+				android:id="@+id/imageView4s"
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:layout_marginLeft="10dp"
+				android:src="@drawable/weight_light" 
+				android:contentDescription="weight linechart"/>
+		   <TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignTop="@id/imageView4s"
+				android:layout_toRightOf="@id/imageView4s"
+				android:layout_marginLeft="10dp"
+				android:text="体重记录"
+				android:textSize="20sp"/>
+			<TextView 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@id/imageView4s"
+				android:layout_toRightOf="@id/imageView4s"
+				android:layout_marginLeft="10dp"
+				android:text="以折线图形式显示体重变化"
+				android:textColor="#66000000"
+				android:textSize="15sp"/>
+		</RelativeLayout>
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="4dp" 
+			android:background="@android:color/transparent"/>  
+	</LinearLayout> 	
+	<View 
+		android:layout_width="fill_parent"
+		android:layout_height="0.1dp"
+		android:background="#88000000"/>
+<!-- 	<LinearLayout -->
+<!-- 		android:id="@+id/re_mdreport" -->
+<!-- 		android:clickable="true" -->
+<!-- 		android:background="@drawable/re2_selector" -->
+<!-- 		android:layout_width="match_parent" -->
+<!-- 		android:layout_height="wrap_content" -->
+<!-- 		android:orientation="vertical" > -->
+<!-- 		<TextView  -->
+<!-- 			android:layout_width="fill_parent" -->
+<!-- 			android:layout_height="4dp"  -->
+<!-- 			android:background="@android:color/transparent"/>     -->
+<!-- 		<RelativeLayout -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="wrap_content"> -->
+<!-- 			<ImageView -->
+<!-- 				android:id="@+id/imageView3ss" -->
+<!-- 				android:layout_width="50dp" -->
+<!-- 				android:layout_height="50dp" -->
+<!-- 				android:layout_marginLeft="10dp" -->
+<!-- 				android:src="@drawable/med_light"  -->
+<!-- 				android:contentDescription="medicine log"/> -->
+<!-- 			<TextView  -->
+<!-- 				android:layout_width="wrap_content" -->
+<!-- 				android:layout_height="wrap_content" -->
+<!-- 				android:layout_alignTop="@id/imageView3ss" -->
+<!-- 				android:layout_toRightOf="@id/imageView3ss" -->
+<!-- 				android:layout_marginLeft="10dp" -->
+<!-- 				android:text="药物记录" -->
+<!-- 				android:textSize="20sp"/> -->
+<!-- 			<TextView  -->
+<!-- 				android:layout_width="wrap_content" -->
+<!-- 				android:layout_height="wrap_content" -->
+<!-- 				android:layout_alignBottom="@id/imageView3ss" -->
+<!-- 				android:layout_toRightOf="@id/imageView3ss" -->
+<!-- 				android:layout_marginLeft="10dp" -->
+<!-- 				android:text="查看您的用药历史记录" -->
+<!-- 				android:textColor="#66000000" -->
+<!-- 				android:textSize="15sp"/> -->
+<!-- 		</RelativeLayout> -->
+<!-- 		<TextView  -->
+<!-- 			android:layout_width="fill_parent" -->
+<!-- 			android:layout_height="4dp"  -->
+<!-- 			android:background="@android:color/transparent"/>    -->
+<!-- 	</LinearLayout>    -->
+<!-- 	<View  -->
+<!-- 		android:layout_width="fill_parent" -->
+<!-- 		android:layout_height="0.1dp" -->
+<!-- 		android:background="#88000000"/> -->
+		<LinearLayout
+			android:id="@+id/re_exreport"
+            android:clickable="true"
+            android:background="@drawable/re2_selector"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<TextView 
+				android:layout_width="fill_parent"
+				android:layout_height="4dp" 
+				android:background="@android:color/transparent"/>    
+			<RelativeLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<ImageView
+					android:id="@+id/imageView4ss"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_marginLeft="10dp"
+					android:src="@drawable/exercise_light" 
+					android:contentDescription="exercise log"/>
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignTop="@id/imageView4ss"
+					android:layout_toRightOf="@id/imageView4ss"
+					android:layout_marginLeft="10dp"
+					android:text="运动记录"
+					android:textSize="20sp"/>
+				<TextView 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignBottom="@id/imageView4ss"
+					android:layout_toRightOf="@id/imageView4ss"
+					android:layout_marginLeft="10dp"
+					android:text="以柱状图形式显示热量消耗"
+					android:textColor="#66000000"
+					android:textSize="15sp"/>
+		</RelativeLayout>
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="4dp" 
+			android:background="@android:color/transparent"/>  
+	</LinearLayout>   
+	<View 
+		android:layout_width="fill_parent"
+		android:layout_height="0.1dp"
+		android:background="#88000000"/>
+</LinearLayout>
+
+    
+
+

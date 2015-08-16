@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zju.bme.bp"
+    android:versionCode="1"
+    android:versionName="1.40" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication">
+          
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        <activity android:name=".add"/>
+        <activity android:name=".stats"/>
+        <activity android:name=".add_bp"/>
+        <activity android:name=".add_weight"/>
+        <activity android:name=".ecg"/>
+        <activity android:name=".cal_linechart"/>
+        <activity android:name=".bmi"/>
+        <activity android:name=".report"/>
+        <activity android:name=".bp_report"/>
+        <activity android:name=".weight_report"/>
+        <activity android:name="come.android.game2048.main_game"/>
+        <activity android:name=".add_exercise"/>
+        <activity android:name=".pie_chart"/>
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity android:name=".ex_report"/>
+        <activity android:name=".bp_linechart"/>
+        <activity android:name=".weight_linechart"/>
+        <activity android:name=".weight_more2"/>
+        <activity android:name=".weight_more1"/>
+        <activity android:name=".key_stats"/>
+        <activity android:name="com.test.btclient.BTClient"/>    
+         <activity android:name="com.test.btclient.readdata"/>    
+	    <activity android:name="com.test.btclient.DeviceListActivity"
+	              android:label="连接设备"
+                  android:theme="@android:style/Theme.Dialog"
+                  android:configChanges="orientation|keyboardHidden" />
+		<activity android:name="com.test.btclient.DataDisplay"
+                  android:label="显示数据"/>
+		<activity android:name="com.test.btclient.SearchActivity"
+                  android:label="绘图"/>
+	    <activity android:name=".health_information"/>
+	    <activity android:name=".bp_info"/>
+	    <activity android:name=".weight_info"/>
+	    <activity android:name=".bp_treat_more"/>
+	    <activity android:name=".add_medicine"/>
+	    <activity android:name=".md_report"/>
+	    <activity android:name=".bp_prevent_more"/>
+	    <activity android:name=".exercise_info"/>
+	    <activity android:name=".save"/>
+	    <activity android:name=".q1"/>
+	    <activity android:name=".q2"/>
+	    <activity android:name=".q3"/>
+	    <activity android:name=".q4"/>
+	    <activity android:name=".q5"/>
+	    <activity android:name=".q6"/>
+	    <activity android:name=".q7"/>
+	    <activity android:name=".q8"/>
+	    <activity android:name=".q9"/>
+	    <activity android:name=".s1"/>
+	    <activity android:name=".s2"/>
+	    <activity android:name=".s3"/>
+	    <activity android:name=".s4"/>
+	    <activity android:name=".s5"/>
+	    <activity android:name=".s6"/>
+	    <activity android:name=".s7"/>
+	    <activity android:name=".s8"/>
+	    <activity android:name=".s9"/>
+	    <activity android:name=".s10"/>
+	    <activity android:name=".s11"/>
+	    <activity android:name=".s12"/>
+	    <activity android:name=".s13"/>
+	    <activity android:name=".s14"/>
+	    <activity android:name=".s15"/>
+	    <activity android:name=".s16"/>
+	    <activity android:name=".s17"/>
+	    <activity android:name=".s18"/>
+	    <activity android:name=".s19"/>
+	    <activity android:name=".s20"/>
+	    <activity android:name=".s21"/>
+    </application>
+
+</manifest>

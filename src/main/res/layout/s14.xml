@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="猫狗咬伤" 
+        android:textSize="20sp"
+        android:textColor="#ee2222"/>
+    <TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+    <View 
+		android:layout_width="fill_parent"
+		android:layout_height="0.1dp"
+		android:background="#88000000"/>
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="        一些人被动物抓咬后，身上只留有牙印或爪痕，认为没伤口就不必处理，这种做法其实是很危险的。因为牙印或爪痕可能造成肉眼看不到的皮肤损伤，狂犬病病毒也有可能从伤口侵入。"/>
+	<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="        注射疫苗应及早、足量。患者必须于咬伤当天，咬伤后第3天、第7天、第14天、第30天各肌肉注射一支疫苗。一定要注射在上臂三角肌或大腿内侧，不能注射在臀部，以免影响疫苗效果。全程注射完毕10日后，应抽取静脉血作抗体检测。如果抗体滴度达到或超过3单位/毫升的标准，即代表获得了免疫效果，如低于标准，应适当增加接种针数，以确保达到防病效果。"/>
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="5sp"/>
+
+	<ImageView
+	    android:adjustViewBounds="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:src="@drawable/maogou" />
+	
+</LinearLayout>

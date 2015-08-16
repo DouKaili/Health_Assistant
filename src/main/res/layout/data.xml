@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >    
+ 
+    <LinearLayout
+        android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        android:layout_weight="1"   
+        >       	
+    <SurfaceView 
+	  android:id="@+id/read_show" 
+	  android:layout_width="fill_parent" 
+	  android:layout_height="fill_parent" 
+	  android:layout_weight="1"
+	  />
+
+    </LinearLayout>
+
+ <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+       	<Button 
+			android:text="画图" 
+			android:id="@+id/Button09" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onSelectButtonClicked">
+		</Button>
+       	<Button 
+			android:text="退出" 
+			android:id="@+id/Button06" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onConnectButtonClicked">
+		</Button>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/cyan"/>
+    <corners
+        android:topLeftRadius="8dp"
+        android:topRightRadius="8dp"
+        android:bottomRightRadius="8dp"
+        android:bottomLeftRadius="8dp"/>
+</shape><!-- From: file:/E:/Android%20Practise/健康小助手完整代码%20-%20练习1/app/src/main/res/drawable-xxhdpi/corner_cyan.xml -->

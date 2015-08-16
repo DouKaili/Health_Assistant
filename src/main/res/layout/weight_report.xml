@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	 <RelativeLayout
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/setting_reminder"
+            android:src="@drawable/btn_back"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:clickable="true"
+            android:onClick="onClickBack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="体重历史"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <LinearLayout 
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical" 
+		 >
+		<TextView
+			android:id="@+id/TextView001s"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="暂时没有保存的内容哦"
+			android:layout_gravity="center"/> 
+		<ListView
+			android:id="@+id/ListView01s"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+</LinearLayout>

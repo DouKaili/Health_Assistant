@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/daily_task_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="5dp">
+    
+    <ImageView
+        android:id="@+id/task_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/task_icon"
+        android:paddingStart="8dp"
+        android:paddingEnd="10dp"
+        android:text="@string/task_title"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/task_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/task_icon"
+        android:layout_below="@id/task_title"
+        android:paddingStart="8dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/task_tip"
+        android:textColor="@color/light_grey"
+        android:textSize="16sp"
+        />
+    
+    
+</RelativeLayout>
+    
+  

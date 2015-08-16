@@ -1,0 +1,340 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:id="@+id/bp_linecharts">
+        <RelativeLayout
+            android:id="@+id/navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/setting_reminder"
+                android:src="@drawable/btn_back"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:clickable="true"
+                android:onClick="onClickBack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="血压历史"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/text1wl_bp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="5dp"/>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/title_chart"
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:textColor="#2196F3"
+                                android:textSize="18sp"
+                                android:text="2015年8月5日至2015年8月12日"/>
+
+                            <lecho.lib.hellocharts.view.LineChartView
+                                android:id="@+id/chart"
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                android:layout_marginTop="20dp"
+                                >
+                                </lecho.lib.hellocharts.view.LineChartView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+
+
+                                android:orientation="horizontal" >
+                                <TextView
+                                    android:id="@+id/title_column"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="30dp"
+                                    android:gravity="center"
+                                    android:textColor="#2196F3"
+                                    android:textSize="18sp"
+                                    android:text="近四周血压平均值"/>
+
+
+                            </LinearLayout>
+
+                            <lecho.lib.hellocharts.view
+                                android:id="@+id/chart_column"
+                                android:layout_width="match_parent"
+                                android:layout_height="180dp"
+                                android:layout_marginTop="20dp"
+                                >
+                            </lecho.lib.hellocharts.view>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="5dp"/>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingBottom="@dimen/activity_vertical_margin"
+                            android:orientation="horizontal">
+
+                            <View
+                                android:layout_width="15dp"
+                                android:layout_height="5dp"/>
+                            <Button
+                                android:id="@+id/oneweek_bp"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left"
+                                android:text="周"
+                                android:textColor="@color/blue"
+                                android:background="@drawable/shape"
+                                android:onClick="OneWeek_BP"/>
+                            <Button
+                                android:id="@+id/onemonth_bp"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left"
+                                android:text="月"
+
+                                android:textColor="@color/blue"
+                                android:background="@drawable/shape"
+                                android:onClick="OneMonth_BP"/>
+                            <View
+                                android:layout_width="70dp"
+                                android:layout_height="5dp"/>
+                            <TextView
+                                android:id="@+id/title_bph"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:textColor="#448AFF"
+                                android:textSize="18sp"
+                                android:text="高压"/>
+                            <TextView
+                                android:id="@+id/title_bph_color"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:textColor="#448AFF"
+                                android:textSize="18sp"
+                                android:background="@drawable/bph_blue"/>
+                            <TextView
+                                android:id="@+id/title_bpl"
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:textColor="#4CAF50"
+                                android:textSize="18sp"
+                                android:text="低压"/>
+                            <TextView
+                                android:id="@+id/title_bpl_color"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:textColor="#448AFF"
+                                android:textSize="18sp"
+                                android:background="@drawable/bpl_green"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/text2wl_bp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:orientation="vertical" >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#ffeeeeee">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="40dip"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal" >
+
+                                <LinearLayout
+                                    android:id="@+id/popupwindow_calendar_last_month"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:orientation="vertical"
+                                    android:padding="10dip" >
+                                    <TextView
+                                        android:layout_width="9dp"
+                                        android:layout_height="14dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginLeft="10dip"
+                                        android:background="@drawable/bt_calendar_last" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/popupwindow_calendar_month"
+                                    android:layout_width="0dip"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textColor="#aa564b4b"
+                                    android:textSize="18sp" />
+
+                                <LinearLayout
+                                    android:id="@+id/popupwindow_calendar_next_month"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:orientation="vertical"
+                                    android:padding="10dip" >
+
+                                    <TextView
+                                        android:layout_width="9dp"
+                                        android:layout_height="14dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:layout_marginRight="10dip"
+                                        android:background="@drawable/bt_calendar_next"
+                                        />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/popupwindow_calendar_now"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:paddingRight="25dip"
+                                android:text="今天"
+                                android:textColor="#333333"
+                                android:textSize="17sp" />
+
+                        </LinearLayout>
+
+>
+                        <zju.bme.bp.KCalendar
+
+                            android:id="@+id/popupwindow_calendar"
+                            android:layout_width="match_parent"
+                            android:layout_height="290dp"
+                            android:background="#ffeeeeee">
+                        </zju.bme.bp.KCalendar>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+
+                            android:orientation="horizontal" >
+                            <TextView
+
+                                android:layout_width="60dp"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:textColor="#536DFE"
+                                android:textSize="15sp"
+                                android:text="未测量"/>
+                            <TextView
+
+                                android:layout_width="40dp"
+                                android:layout_height="10dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#448AFF"
+                                android:textSize="10sp"
+                                android:background="@drawable/deep_blue"/>
+                            <TextView
+
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:textColor="#4CAF50"
+                                android:textSize="15sp"
+                                android:text="测量完成"/>
+                            <TextView
+
+                                android:layout_width="40dp"
+                                android:layout_height="10dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#448AFF"
+                                android:textSize="10sp"
+                                android:background="@drawable/bpl_green"/>
+                            <TextView
+
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:textColor="#448AFF"
+                                android:textSize="15sp"
+                                android:text="未完成"/>
+                            <TextView
+
+                                android:layout_width="40dp"
+                                android:layout_height="10dp"
+                                android:gravity="center_vertical"
+                                android:textColor="#448AFF"
+                                android:textSize="10sp"
+                                android:background="@drawable/bph_blue"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/activity_vertical_margin"
+                            android:paddingTop="@dimen/activity_vertical_margin">
+
+                        <ListView
+                            android:id="@+id/ListView01w2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:dividerHeight="10dp"
+                            android:divider="@color/white"/>
+                    </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
